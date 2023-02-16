@@ -260,6 +260,15 @@ nav div a:hover img {
   background: rgba(53, 52, 52, 0.8);
   filter: blur(40px);
 }
+.feedback_btn {
+  border: 3px solid #000000;
+  transition: all 250ms ease-in-out;
+}
+.feedback_btn:hover {
+  border: 3px solid #000000;
+  background-color: #000000 !important;
+  color: white !important;
+}
 
 @media (min-width: 575.98px) {
   :root {
