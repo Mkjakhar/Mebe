@@ -10,8 +10,8 @@
 
 :root {
     --fs-xl: 16px;
-    --fs-2xl: 20px;
-    --fs-3xl: 24px;
+    --fs-2xl: 18px;
+    --fs-3xl: 20px;
     --fs-3xxl: 26px;
     --fs-4xl: 30px;
     --fs-4xxl: 34px;
@@ -133,6 +133,7 @@
 
 nav ul li {
     padding: 0px 4px;
+    border-radius: 6px;
     transition: linear 200ms;
 }
 
@@ -246,8 +247,8 @@ nav div a:hover img {
 @media (min-width: 575.98px) {
     :root {
         --fs-xl: 20px;
-        --fs-2xl: 24px;
-        --fs-3xl: 28px;
+        --fs-2xl: 22px;
+        --fs-3xl: 24px;
         --fs-3xxl: 30px;
         --fs-4xl: 34px;
         --fs-4xxl: 38px;
@@ -260,8 +261,8 @@ nav div a:hover img {
 @media (min-width: 767.98px) {
     :root {
         --fs-xl: 20px;
-        --fs-2xl: 28px;
-        --fs-3xl: 30px;
+        --fs-2xl: 22px;
+        --fs-3xl: 24px;
         --fs-3xxl: 32px;
         --fs-4xl: 36px;
         --fs-4xxl: 40px;
@@ -274,8 +275,8 @@ nav div a:hover img {
 @media (min-width: 991.98px) {
     :root {
         --fs-xl: 20px;
-        --fs-2xl: 28px;
-        --fs-3xl: 30px;
+        --fs-2xl: 22px;
+        --fs-3xl: 24px;
         --fs-3xxl: 32px;
         --fs-4xl: 38px;
         --fs-4xxl: 42px;

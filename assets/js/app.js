@@ -1,8 +1,10 @@
 const openNav = () => {
     document.getElementById("Nav").classList.add("openNav")
+    document.body.classList.add("overflow-hidden")
 }
 const hideNav = () => {
     document.getElementById("Nav").classList.remove("openNav")
+    document.body.classList.remove("overflow-hidden")
 }
 // slider
 $('.slider').slick({
