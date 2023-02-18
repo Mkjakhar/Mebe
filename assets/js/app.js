@@ -6,6 +6,11 @@ const hideNav = () => {
     document.getElementById("Nav").classList.remove("openNav")
     document.body.classList.remove("overflow-hidden")
 }
+// back-to-top
+const BackToTop = document.getElementById('BackToTop')
+BackToTop.addEventListener('click', function moveToTop() {
+    document.documentElement.scrollTop = 0
+})
 // slider
 $('.slider').slick({
     dots: false,

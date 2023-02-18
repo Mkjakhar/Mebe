@@ -437,6 +437,12 @@ nav div a:hover img {
   scale: 0.95;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
