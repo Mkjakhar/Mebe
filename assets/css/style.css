@@ -443,24 +443,6 @@ nav div a:hover img {
   scale: 0.9;
 }
 
-.up_down_anim {
-  animation: upDown 4.5s linear infinite;
-}
-
-@keyframes upDown {
-  0% {
-    transform: translateY(-10px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
