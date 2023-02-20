@@ -451,6 +451,10 @@ nav div a:hover img {
   scale: 0.9;
 }
 
+.btn_font_size {
+  font-size: 25px;
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
@@ -462,6 +466,10 @@ nav div a:hover img {
     --fs-5xl: 25px;
     --fs-6xl: 46px;
     --fs-10xl: 58px;
+  }
+
+  .btn_font_size {
+    font-size: unset;
   }
 
   .right_arrow {
