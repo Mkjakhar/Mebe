@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -79,7 +79,8 @@
                 <img src="./assets//img/webp/hero-img.webp" style="display: none;" alt="">
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-center py-5 text-center">
-                        <img width="230" height="70" src="./assets/img/svg/hero-logo.svg" alt="hero-logo">
+                        <img data-aos="zoom-in" data-aos-duration="800" width="230" height="70"
+                            src="./assets/img/svg/hero-logo.svg" alt="hero-logo">
                         <h2 class="text-uppercase ff_forum fw_regular text_light fs_3xxl mt-3 pt-md-1">МЕБЕЛЬНАЯ ФАБРИКА
                         </h2>
                         <p
@@ -146,7 +147,9 @@
                                 хранения, а внутреннее пространство будет использовано наилучшим образом.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/window.webp" alt="bedroom">
+                            <!-- <img class="w-100" src="./assets/img/webp/window.webp" alt="bedroom"> -->
+                            <video class="w-100 h-100" muted autoplay loop
+                                src="./assets/video/kitchen-main.mp4"></video>
                         </div>
                     </div>
                 </div>
@@ -156,7 +159,8 @@
                 <div class="custom-container ps-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row flex-column-reverse flex-lg-row align-items-center">
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/washfashion.webp" alt="bedroom">
+                            <!-- <img class="w-100" src="./assets/img/webp/washfashion.webp" alt="bedroom"> -->
+                            <video loop autoplay muted class="w-100" src="./assets/video/washfashion.mkv"></video>
                         </div>
                         <div class="col-lg-6 text-center">
                             <p class="fs_6xl fw_regular ff_forum text_black mb-0 text-uppercase mb-sm-3">все еще
@@ -182,7 +186,8 @@
                                 требования к проектам.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/furniture-skin.webp" alt="bedroom">
+                            <!-- <img class="w-100" src="./assets/img/webp/furniture-skin.webp" alt="bedroom"> -->
+                            <video loop autoplay muted class="w-100" src="./assets/video/furniture-skin.mkv"></video>
                         </div>
                     </div>
                 </div>
@@ -221,8 +226,8 @@
             </section>
             <!-- second-slider-section -->
             <section class="py-5">
-                <div class="container-fluid custom-container">
-                    <div class="px-lg-5">
+                <div class="container-fluid pt-xl-5 custom-container">
+                    <div class="px-lg-5 pt-xl-5">
                         <h3 class="fs_10xl fw_regular ff_mont text_dark">КАК МЫ
                         </h3>
                         <h4 class="fs_10xl fw_bold text_dark ff_mont pb-xl-5 pb-4">РАБОТАЕМ?</h4>
@@ -335,6 +340,7 @@
                                 class="slider_box bg_light_gray py-sm-5 py-4 px-sm-5 px-2 mx-lg-5 mx-md-3 mx-2 position-relative">
                                 <div class="d-flex justify-content-center">
                                     <img class="qoutes_img" src="../assets/img/png/img_66.png" alt="img_66" />
+
                                 </div>
                                 <p
                                     class="ff_forum fs_5xl fw_regular text_black mt-4 mb-0 px-lg-5 text-center text-xxl-start">
@@ -417,7 +423,7 @@
                     <div class="d-flex gap-md-5 gap-4 align-items-center justify-content-end">
                         <p class="fs_4xl fw_bold text_light ff_mont">НАПИСАТЬ НАМ</p>
                         <form action="" class="pe-xl-5 me-xl-5">
-                            <input class="footer_mail_input text_white ff_mont fs_4xl" type="email" name="" id=""
+                            <input class="footer_mail_input text_white ff_mont fs_4xl" type="email"
                                 placeholder="enter email address">
                         </form>
                     </div>
@@ -430,6 +436,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- slick-slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -437,7 +444,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
     <script src="./assets/js/app.js"></script>
 </body>
 

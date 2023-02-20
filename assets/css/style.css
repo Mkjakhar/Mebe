@@ -441,6 +441,13 @@ nav div a:hover img {
   position: fixed;
   bottom: 15px;
   right: 15px;
+  transition: linear 200ms;
+  display: none;
+}
+
+.back-to-top:active,
+.back-to-top:hover {
+  scale: 0.9;
 }
 
 @media (min-width: 575.98px) {

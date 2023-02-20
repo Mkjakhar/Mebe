@@ -11,6 +11,15 @@ const BackToTop = document.getElementById('BackToTop')
 BackToTop.addEventListener('click', function moveToTop() {
     document.documentElement.scrollTop = 0
 })
+window.onscroll = () => scrollFunction();
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 150) {
+        BackToTop.style.display = "block";
+    } else {
+        BackToTop.style.display = "none";
+    }
+}
 // slider
 $('.slider').slick({
     dots: false,
