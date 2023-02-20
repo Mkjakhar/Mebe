@@ -80,7 +80,9 @@
                     </div>
                 </div>
             </nav>
-            <section class="flex-grow-1 hero_section">
+            <section style="z-index: 1;" class="flex-grow-1 position-relative hero_section">
+                <video style="object-fit: cover; z-index: -1;" class="w-100 h-100 position-absolute top-0 start-0" muted
+                    autoplay loop src="./assets/video/kitchen-main.mkv"></video>
                 <img src="./assets//img/webp/hero-img.webp" style="display: none" alt="" />
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-center py-5 text-center">
@@ -180,9 +182,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <!-- <img class="w-100" src="./assets/img/webp/window.webp" alt="bedroom"> -->
-                        <video data-aos="zoom-in" data-aos-duration="800" data-aos-offset="200" class="w-100 h-100"
-                            muted autoplay loop src="./assets/video/kitchen-main.mp4"></video>
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-offset="200" class="w-100"
+                            src="./assets/img/webp/window.webp" alt="bedroom">
                     </div>
                 </div>
             </div>
