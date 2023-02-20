@@ -443,10 +443,6 @@ nav div a:hover img {
   scale: 0.9;
 }
 
-.btn_font_size {
-  font-size: 25px;
-}
-
 .up_down_anim {
   animation: upDown 4.5s linear infinite;
 }
@@ -476,10 +472,6 @@ nav div a:hover img {
     --fs-5xl: 25px;
     --fs-6xl: 46px;
     --fs-10xl: 58px;
-  }
-
-  .btn_font_size {
-    font-size: unset;
   }
 
   .right_arrow {
