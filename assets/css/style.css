@@ -127,6 +127,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hero_section {
@@ -223,7 +224,7 @@ nav div a:hover img {
 .next-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important;
   right: 10px;
   z-index: 1;
   width: 6.6%;
@@ -234,7 +235,7 @@ nav div a:hover img {
 .prev-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important;
   left: 10px;
   z-index: 1;
   width: 6.6%;
