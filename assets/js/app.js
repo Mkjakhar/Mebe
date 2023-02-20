@@ -79,3 +79,27 @@ $(function () {
             $('.current').text(nextSlide + 01);
         });
 });
+
+// animation
+
+// window.addEventListener("load", revelAnim);
+// const navlinks = document.querySelectorAll(".nav_links")
+
+// function revelAnim() {
+//     const TLfade = gsap.timeline();
+//     TLfade.from(navlinks, {
+//         autoAlpha: 0,
+//         x: 50,
+//         ease: "sine.out",
+//         stagger: 0.2,
+//     }).from(".pageLogo", {
+//         autoAlpha: 0,
+//         scale: 1.4,
+//         ease: "sine.out",
+//         stagger: 0.3,
+//     }).from(".main_btn", {
+//         autoAlpha: 0,
+//         y: 100,
+//         ease: "sine.out",
+//     }, "-=0.1")
+// }

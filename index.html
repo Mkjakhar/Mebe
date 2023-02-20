@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/png/favicon.png" type="image/x-icon">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -35,16 +36,16 @@
                         <button onclick="hideNav()"
                             class="btn btn-close fs-4 position-absolute top-0 start-0 mt-4 ms-3 d-xl-none"></button>
                         <li onclick="hideNav()"><a
-                                class="fs_3xxl fw_regular ff_forum text-uppercase text_dark d-inline-block"
+                                class="fs_3xxl fw_regular nav_links ff_forum text-uppercase text_dark d-inline-block"
                                 href="#">ПОРТФОЛИО</a></li>
                         <li onclick="hideNav()"><a
-                                class="fs_3xxl fw_regular ff_forum text-uppercase mx-xxl-4 text_dark d-inline-block"
+                                class="fs_3xxl fw_regular nav_links ff_forum text-uppercase mx-xxl-4 text_dark d-inline-block"
                                 href="#">уСЛУГИ</a></li>
                         <li onclick="hideNav()"><a
-                                class="fs_3xxl fw_regular ff_forum text-uppercase mx-xxl-4 text_dark d-inline-block"
+                                class="fs_3xxl fw_regular nav_links ff_forum text-uppercase mx-xxl-4 text_dark d-inline-block"
                                 href="#">оТЗЫВЫ </a></li>
                         <li onclick="hideNav()"><a
-                                class="fs_3xxl fw_regular ff_forum text-uppercase text_dark d-inline-block"
+                                class="fs_3xxl fw_regular nav_links ff_forum text-uppercase text_dark d-inline-block"
                                 href="#Contact">кОНТАКТЫ</a></li>
                         <li onclick="hideNav()" class="d-xl-none"><a
                                 class="nav_number_links d-inline-block fs_xl ff_mont fw_regular text_gray"
@@ -56,7 +57,7 @@
                                 href="tel:+7 727 327 73 27"><i>+7 727 327 73 27</i></a></li>
                     </ul>
                     <div class="d-flex align-items-center gap-5">
-                        <div class="d-xl-flex flex-column d-none">
+                        <div class="d-xl-flex flex-column d-none nav_links">
                             <a class="nav_number_links d-inline-block fs_xl ff_mont fw_regular text_gray"
                                 href="tel:+7 747 274 22 60"><i>+7
                                     747 274 22
@@ -65,11 +66,11 @@
                                 href="tel:+7 727 327 73 27"><i>+7 727 327 73 27</i></a>
                         </div>
                         <div class="ms-4 d-flex align-items-center gap-4">
-                            <a class="d-inline-block" href="#"><img width="40" height="40"
+                            <a class="nav_links d-inline-block" href="#"><img width="40" height="40"
                                     src="./assets/img/svg/insta.svg" alt="insta"></a>
-                            <a class="d-inline-block" href="#"><img width="50" height="50"
+                            <a class="nav_links d-inline-block" href="#"><img width="50" height="50"
                                     src="./assets/img/svg/whatsapp.svg" alt="whatsapp"></a>
-                            <a class="d-inline-block" href="#"><img width="44" height="44"
+                            <a class="nav_links d-inline-block" href="#"><img width="44" height="44"
                                     src="./assets/img/svg/mail.svg" alt="mail"></a>
                         </div>
                     </div>
@@ -79,20 +80,25 @@
                 <img src="./assets//img/webp/hero-img.webp" style="display: none;" alt="">
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-center py-5 text-center">
-                        <img data-aos="zoom-in" data-aos-duration="800" width="230" height="70"
+                        <img data-aos="zoom-in" data-aos-duration="800" class="pageLogo" width="230" height="70"
                             src="./assets/img/svg/hero-logo.svg" alt="hero-logo">
-                        <h2 class="text-uppercase ff_forum fw_regular text_light fs_3xxl mt-3 pt-md-1">МЕБЕЛЬНАЯ ФАБРИКА
+                        <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300"
+                            class="text-uppercase ff_forum fw_regular text_light fs_3xxl mt-3 pt-md-1 pageLogo">
+                            МЕБЕЛЬНАЯ ФАБРИКА
                         </h2>
-                        <p
-                            class="text-uppercase ff_forum fw_regular text_light fs_3xl mb-0 pt-4 pt-sm-5 mt-xl-4 mt-xxl-5">
+                        <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="600"
+                            class="pageLogo text-uppercase ff_forum fw_regular text_light fs_3xl mb-0 pt-4 pt-sm-5 mt-xl-4 mt-xxl-5">
                             ХОТИТЕ
                             ПОЛУЧИТЬ
                             БЫСТРЫЙ РАСЧЕТ?
                         </p>
-                        <a href="" class="text-uppercase ff_mont fw_regular text_light hero_btn fs_3xl mb-0 mt-4">
-                            ОСТАВИТЬ ЗАЯВКУ
-                        </a>
-                        <p class="ff_mont text_light fw_regular fs_xl mt-4">Бесплатный замер</p>
+                        <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="900" class="main_btn">
+                            <a href=""
+                                class="text-uppercase ff_mont fw_regular text_light d-inline-block hero_btn fs_3xl mb-0 mt-4">
+                                ОСТАВИТЬ ЗАЯВКУ
+                            </a></div>
+                        <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="1200"
+                            class="pageLogo ff_mont text_light fw_regular fs_xl mt-4">Бесплатный замер</p>
                     </div>
                 </div>
             </section>
@@ -100,22 +106,28 @@
         <main>
             <!-- slider-section -->
             <section class="position-relative overflow-hidden">
-                <button class="bg-transparent rounded-pill overflow-hidden border-0 prev-arrow"><img class="w-100"
+                <button data-aos="zoom-in" data-aos-duration="800"
+                    class="bg-transparent rounded-pill overflow-hidden border-0 prev-arrow"><img class="w-100"
                         src="./assets/img/svg/left-arrow.svg" alt="left-arrow"></button>
-                <button class="bg-transparent rounded-pill overflow-hidden border-0 next-arrow"><img class="w-100"
+                <button data-aos="zoom-in" data-aos-duration="800"
+                    class="bg-transparent rounded-pill overflow-hidden border-0 next-arrow"><img class="w-100"
                         src="./assets/img/svg/right-arrow.svg" alt="right-arrow"></button>
                 <div class="container-fluid py-5">
                     <div class="slider px-4 px-sm-5">
-                        <div class="px-2">
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                            class="px-2">
                             <img class="w-100" src="./assets/img/webp/slider-img-1.webp" alt="slider-img-1">
                         </div>
-                        <div class="px-2">
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="400"
+                            class="px-2">
                             <img class="w-100" src="./assets/img/webp/slider-img-2.webp" alt="slider-img-2">
                         </div>
-                        <div class="px-2">
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="600"
+                            class="px-2">
                             <img class="w-100" src="./assets/img/webp/slider-img-3.webp" alt="slider-img-3">
                         </div>
-                        <div class="px-2">
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="800"
+                            class="px-2">
                             <img class="w-100" src="./assets/img/webp/slider-img-1.webp" alt="slider-img-1">
                         </div>
                     </div>
@@ -126,11 +138,14 @@
                 <div class="custom-container ps-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row flex-column-reverse flex-lg-row align-items-center">
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/bedroom.webp" alt="bedroom">
+                            <img data-aos="zoom-in" data-aos-duration="800" data-aos-offset="200" class="w-100"
+                                src="./assets/img/webp/bedroom.webp" alt="bedroom">
                         </div>
                         <div class="col-lg-6 text-lg-end">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ПРОЕКТ 3D</p>
-                            <p class="fs_3xl ff_mont text_black fw_regular">Для достижения наилучшего результата,
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ПРОЕКТ 3D</p>
+                            <p data-aos="fade-right" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular">Для достижения наилучшего результата,
                                 подготовим подробные 3D эскизы и чертежи.</p>
                         </div>
                     </div>
@@ -141,15 +156,18 @@
                 <div class="custom-container pe-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ФУНКЦИОНАЛ</p>
-                            <p class="fs_3xl ff_mont text_black fw_regular">Отличительная особенность продуманной мебели
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ФУНКЦИОНАЛ</p>
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular">Отличительная особенность продуманной
+                                мебели
                                 - хорошая функциональность. В вашей мебели будут установлены высококачественные системы
                                 хранения, а внутреннее пространство будет использовано наилучшим образом.</p>
                         </div>
                         <div class="col-lg-6">
                             <!-- <img class="w-100" src="./assets/img/webp/window.webp" alt="bedroom"> -->
-                            <video class="w-100 h-100" muted autoplay loop
-                                src="./assets/video/kitchen-main.mp4"></video>
+                            <video data-aos="zoom-in" data-aos-duration="800" data-aos-offset="200" class="w-100 h-100"
+                                muted autoplay loop src="./assets/video/kitchen-main.mp4"></video>
                         </div>
                     </div>
                 </div>
@@ -160,14 +178,18 @@
                     <div class="row flex-column-reverse flex-lg-row align-items-center">
                         <div class="col-lg-6">
                             <!-- <img class="w-100" src="./assets/img/webp/washfashion.webp" alt="bedroom"> -->
-                            <video loop autoplay muted class="w-100" src="./assets/video/washfashion.mkv"></video>
+                            <video data-aos="zoom-in" data-aos-duration="800" data-aos-offset="300" loop autoplay muted
+                                class="w-100" src="./assets/video/washfashion.mkv"></video>
                         </div>
                         <div class="col-lg-6 text-center">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 text-uppercase mb-sm-3">все еще
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="300"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 text-uppercase mb-sm-3">все еще
                                 сомневаетесь?</p>
-                            <p class="fs_3xl ff_mont text_black fw_regular mb-0">Получите консультацию
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular mb-0">Получите консультацию
                                 <span class="d-lg-block"> прямо сейчас</span></p>
-                            <a href=""
+                            <a data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                href=""
                                 class="fs_3xl fw_regular ff_mont text_black contact_btn text-uppercase mb-3 mt-lg-5 mt-4 d-inline-block">ОСтавить
                                 контакты</a>
                         </div>
@@ -179,15 +201,18 @@
                 <div class="custom-container pe-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">МАТЕРИАЛЫ</p>
-                            <p class="fs_3xl ff_mont text_black fw_regular">Для создания хорошей мебели очень важно
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">МАТЕРИАЛЫ</p>
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular">Для создания хорошей мебели очень важно
                                 использование качественных материалов. Мы напрямую работаем только с проверенными
                                 производителями Турции, Австрии, Польши и России. Всегда учитываем характеристики и
                                 требования к проектам.</p>
                         </div>
                         <div class="col-lg-6">
                             <!-- <img class="w-100" src="./assets/img/webp/furniture-skin.webp" alt="bedroom"> -->
-                            <video loop autoplay muted class="w-100" src="./assets/video/furniture-skin.mkv"></video>
+                            <video data-aos="zoom-in" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
+                                loop autoplay muted class="w-100" src="./assets/video/furniture-skin.mkv"></video>
                         </div>
                     </div>
                 </div>
@@ -197,11 +222,16 @@
                 <div class="custom-container ps-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row flex-column-reverse flex-lg-row align-items-center">
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/blum.webp" alt="bedroom">
+                            <img data-aos="zoom-in" data-aos-duration="800" data-aos-offset="300" class="w-100"
+                                src="./assets/img/webp/blum.webp" alt="bedroom">
                         </div>
                         <div class="col-lg-6 text-lg-end">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ФУРНИТУРА</p>
-                            <p class="fs_3xl ff_mont text_black fw_regular">В своих изделиях мы используем исключительно
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200"
+                                data-aos="fade-left" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3">ФУРНИТУРА</p>
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular">В своих изделиях мы используем
+                                исключительно
                                 качественную европейскую фурнитуру Blum и Hettich.</p>
                         </div>
                     </div>
@@ -212,14 +242,17 @@
                 <div class="custom-container pe-lg-0 container-fluid py-4 py-sm-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <p class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3 text-uppercase">наша фабрика
+                            <p data-aos="fade-left" data-aos-duration="800" data-aos-offset="300"
+                                class="fs_6xl fw_regular ff_forum text_black mb-0 mb-sm-3 text-uppercase">наша фабрика
                             </p>
-                            <p class="fs_3xl ff_mont text_black fw_regular">Индивидуальный подход к каждому клиенту,
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200"
+                                class="fs_3xl ff_mont text_black fw_regular">Индивидуальный подход к каждому клиенту,
                                 наша фабрика с полным циклом производства может воплотить любой эскиз и пожелание
                                 заказчика</p>
                         </div>
                         <div class="col-lg-6">
-                            <img class="w-100" src="./assets/img/webp/map.webp" alt="bedroom">
+                            <img data-aos="zoom-in" data-aos-duration="800" data-aos-offset="300" class="w-100"
+                                src="./assets/img/webp/map.webp" alt="bedroom">
                         </div>
                     </div>
                 </div>
@@ -228,7 +261,8 @@
             <section class="py-5">
                 <div class="container-fluid pt-xl-5 custom-container">
                     <div class="px-lg-5 pt-xl-5">
-                        <h3 class="fs_10xl fw_regular ff_mont text_dark">КАК МЫ
+                        <h3 data-aos="zoom-in" data-aos-duration="800" data-aos-offset="300"
+                            class="fs_10xl fw_regular ff_mont text_dark">КАК МЫ
                         </h3>
                         <h4 class="fs_10xl fw_bold text_dark ff_mont pb-xl-5 pb-4">РАБОТАЕМ?</h4>
                     </div>
@@ -436,7 +470,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- slick-slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -444,8 +477,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // once: true,
+        });
+    </script>
 </body>
 
 </html>
