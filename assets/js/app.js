@@ -58,6 +58,18 @@ $(".my-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+$(".partners-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 600,
+    arrows: false,
+    autoplay: true,
+    pauseOnHover: false,
+    // nextArrow: ".nex-arrow",
+    // prevArrow: ".pre-arrow",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
 // slider with counter
 $(function () {
     $('.custom-slider').on('init', function (event, slick) {
