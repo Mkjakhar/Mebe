@@ -705,6 +705,7 @@ $(".partners-slider").slick({
     infinite: true,
     arrows: false,
     autoplaySpeed: 200,
+    cssEase: 'linear',
     autoplay: true,
     fade: true,
     pauseOnHover: false,
