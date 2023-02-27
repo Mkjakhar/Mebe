@@ -51,7 +51,8 @@ $('.slider').slick({
 $(".my-slider").slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 900,
+    draggable: true,
     arrows: true,
     nextArrow: ".nex-arrow",
     prevArrow: ".pre-arrow",
@@ -69,12 +70,15 @@ $(function () {
         .slick({
             dots: false,
             infinite: true,
-            speed: 300,
+            speed: 900,
             arrows: true,
+            fade: true,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
             nextArrow: ".custom-next",
             prevArrow: ".custom-prev",
             slidesToShow: 1,
             slidesToScroll: 1,
+            touchThreshold: 100
         })
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             $('.current').text(nextSlide + 01);
@@ -697,7 +701,8 @@ details();
 $(".partners-slider").slick({
         dots: false,
         infinite: true,
-        speed: 0.3,
+        speed: 0,
+        infinite: true,
         arrows: false,
         // autoplay: true,
         fade: true,

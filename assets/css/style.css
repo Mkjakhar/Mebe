@@ -453,6 +453,24 @@ nav div a:hover img {
   /* width: 100vw; */
 }
 
+.custom-slider img {
+  width: 100%;
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: scale(1.2);
+}
+
+.custom-slider .slick-active img {
+  transform: scale(1);
+}
+
+.custom-slider .slider {
+  box-shadow: 0 20px 50px -25px black;
+}
+
+.custom-slider .slider-track {
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
