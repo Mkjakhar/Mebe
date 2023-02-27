@@ -450,7 +450,7 @@ nav div a:hover img {
 }
 
 .panel img {
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 @media (min-width: 575.98px) {
