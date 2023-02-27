@@ -463,10 +463,6 @@ nav div a:hover img {
   transform: scale(1);
 }
 
-.custom-slider .slider {
-  box-shadow: 0 20px 50px -25px black;
-}
-
 .custom-slider .slider-track {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
 }
