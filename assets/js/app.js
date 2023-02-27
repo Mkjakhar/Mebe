@@ -65,8 +65,6 @@ $(".partners-slider").slick({
     arrows: false,
     autoplay: true,
     pauseOnHover: false,
-    // nextArrow: ".nex-arrow",
-    // prevArrow: ".pre-arrow",
     slidesToShow: 1,
     slidesToScroll: 1,
 });
@@ -90,4 +88,93 @@ $(function () {
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             $('.current').text(nextSlide + 01);
         });
+});
+
+
+
+// slide-animation
+const ImgElem = document.getElementById("Slides");
+// map cards
+const users = [{
+        img: "./assets/img/webp/0001.webp"
+    },
+    {
+        img: "./assets/img/webp/0002.webp"
+    },
+    {
+        img: "./assets/img/webp/0003.webp"
+    },
+    {
+        img: "./assets/img/webp/0004.webp"
+    },
+    {
+        img: "./assets/img/webp/0005.webp"
+    },
+    {
+        img: "./assets/img/webp/0006.webp"
+    },
+    {
+        img: "./assets/img/webp/0007.webp"
+    },
+    {
+        img: "./assets/img/webp/0008.webp"
+    },
+    {
+        img: "./assets/img/webp/0009.webp"
+    },
+    {
+        img: "./assets/img/webp/0010.webp"
+    },
+    {
+        img: "./assets/img/webp/0011.webp"
+    },
+    {
+        img: "./assets/img/webp/0012.webp"
+    },
+    {
+        img: "./assets/img/webp/0013.webp"
+    },
+    {
+        img: "./assets/img/webp/0014.webp"
+    },
+    {
+        img: "./assets/img/webp/0015.webp"
+    },
+    {
+        img: "./assets/img/webp/0016.webp"
+    },
+    {
+        img: "./assets/img/webp/0017.webp"
+    },
+    {
+        img: "./assets/img/webp/0020.webp"
+    },
+
+];
+let Images = users
+    .map((element) => {
+        return `<div class="panel"><img src=${element.img} alt="img"></div>`;
+    })
+    .join("");
+const details = () => {
+    ImgElem.innerHTML = Images;
+};
+details();
+
+// gsape
+gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    x: 0,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".partners-conatiner",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".partners-conatiner").offsetWidth
+    }
 });

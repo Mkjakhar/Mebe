@@ -443,6 +443,16 @@ nav div a:hover img {
   scale: 0.9;
 }
 
+.partners-conatiner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.panel img {
+  width: 100vw;
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
