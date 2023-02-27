@@ -697,7 +697,7 @@ details();
 $(".partners-slider").slick({
         dots: false,
         infinite: true,
-        speed: 1,
+        speed: 0.3,
         arrows: false,
         // autoplay: true,
         fade: true,
