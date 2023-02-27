@@ -699,26 +699,27 @@ details();
 
 // slider
 $(".partners-slider").slick({
-        dots: false,
-        infinite: true,
-        speed: 0,
-        infinite: true,
-        arrows: false,
-        // autoplay: true,
-        fade: true,
-        pauseOnHover: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    })
-    .on('wheel', (function (e) {
-        e.preventDefault();
+    dots: false,
+    infinite: true,
+    speed: 0,
+    infinite: true,
+    arrows: false,
+    autoplaySpeed: 200,
+    autoplay: true,
+    fade: true,
+    pauseOnHover: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+})
+// .on('wheel', (function (e) {
+//     e.preventDefault();
 
-        if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-        } else {
-            $(this).slick('slickNext');
-        }
-    }));;
+//     if (e.originalEvent.deltaY < 0) {
+//         $(this).slick('slickPrev');
+//     } else {
+//         $(this).slick('slickNext');
+//     }
+// }));
 // gsape
 // gsap.registerPlugin(ScrollTrigger);
 
