@@ -213,7 +213,8 @@ nav div a:hover img {
   color: var(--clr-white);
 }
 
-.next-arrow {
+.next-arrow,
+.partner-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) !important;
@@ -224,7 +225,8 @@ nav div a:hover img {
   transition: linear 200ms;
 }
 
-.prev-arrow {
+.prev-arrow,
+.partner-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) !important;

@@ -21,8 +21,8 @@
 </head>
 
 <body class="overflow- hidden">
-    <div id="loader" class="pre-loader d-flex align-items-center justify-content-center"><img width="230"
-            src="./assets/img/svg/hero-logo.svg" alt="hero-logo"></div>
+    <!-- <div id="loader" class="pre-loader d-flex align-items-center justify-content-center"><img width="230"
+            src="./assets/img/svg/hero-logo.svg" alt="hero-logo"></div> -->
     <div class="main_box">
         <img src="./assets/img/webp/main-bg.webp" style="display: none" alt="main-bg" />
         <header class="hero_section_height d-flex flex-column">
@@ -376,7 +376,14 @@
                     </h2>
                 </div>
             </div>
-            <div class="partners-slider bg_dark" id="Slides"></div>
+            <div class="position-relative">
+                <div class="partners-slider bg_dark" id="Slides"></div>
+                <button class="border-0 bg-transparent rounded-pill partner-prev"> <img class="w-100"
+                        src="../assets/img/svg/left-arrow.svg" alt="left_arrow" /></button>
+                <button class="border-0 bg-transparent rounded-pill partner-next"> <img class="w-100"
+                        src="../assets/img/svg/right-arrow.svg" alt="right-arrow" /></button>
+            </div>
+
         </section>
         <!-- =============== second last section ========== -->
         <section class="py-5 px-md-5 overflow-hidden">
@@ -563,12 +570,12 @@
             disable: "mobile"
         });
 
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.body.classList.remove("overflow-hidden")
-                document.getElementById("loader").classList.add("remove-loader")
-            }, 2500);
-        })
+        // window.addEventListener("load", function () {
+        //     setTimeout(function () {
+        //         document.body.classList.remove("overflow-hidden")
+        //         document.getElementById("loader").classList.add("remove-loader")
+        //     }, 2500);
+        // })
     </script>
 </body>
 
