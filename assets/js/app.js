@@ -78,13 +78,25 @@ $(function () {
             prevArrow: ".custom-prev",
             slidesToShow: 1,
             slidesToScroll: 1,
-            touchThreshold: 100
+            touchThreshold: 100,
+            asNavFor: ".we-work-slider"
         })
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             $('.current').text(nextSlide + 01);
         });
 });
-
+// we-work-slider
+$(".we-work-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".custom-slider"
+})
 
 
 // slide-animation
@@ -567,7 +579,8 @@ const users = [{
     },
     {
         img: "./assets/img/webp/0160.webp"
-    }, {
+    },
+    {
         img: "./assets/img/webp/0161.webp"
     },
     {
@@ -626,7 +639,8 @@ const users = [{
     },
     {
         img: "./assets/img/webp/0180.webp"
-    }, {
+    },
+    {
         img: "./assets/img/webp/0181.webp"
     },
     {
@@ -702,10 +716,9 @@ $(".partners-slider").slick({
     dots: false,
     infinite: true,
     speed: 0,
-    infinite: true,
     arrows: true,
-    autoplaySpeed: 2000,
-    // cssEase: 'linear',
+    autoplaySpeed: 200,
+    cssEase: 'ease',
     nextArrow: ".partner-next",
     prevArrow: ".partner-prev",
     autoplay: true,
