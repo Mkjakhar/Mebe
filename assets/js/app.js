@@ -731,29 +731,3 @@ $(".partners-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
 });
-// .on('wheel', (function (e) {
-//     e.preventDefault();
-
-//     if (e.originalEvent.deltaY < 0) {
-//         $(this).slick('slickPrev');
-//     } else {
-//         $(this).slick('slickNext');
-//     }
-// }));
-// gsape
-// gsap.registerPlugin(ScrollTrigger);
-
-// let sections = gsap.utils.toArray(".panel");
-
-// gsap.to(sections, {
-//     xPercent: -100 * (sections.length - 1),
-//     x: 0,
-//     ease: "none",
-//     scrollTrigger: {
-//         trigger: ".partners-conatiner",
-//         pin: true,
-//         scrub: 1,
-//         snap: 1 / (sections.length - 1),
-//         end: () => "+=" + document.querySelector(".partners-conatiner").offsetWidth
-//     }
-// });
