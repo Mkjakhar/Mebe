@@ -469,6 +469,10 @@ nav div a:hover img {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+footer iframe {
+  height: 340px;
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
@@ -480,6 +484,10 @@ nav div a:hover img {
     --fs-5xl: 25px;
     --fs-6xl: 46px;
     --fs-10xl: 58px;
+  }
+
+  footer iframe {
+    height: 440px;
   }
 
   .right_arrow {
@@ -626,6 +634,10 @@ nav div a:hover img {
     --fs-5xl: 50px;
     --fs-6xl: 60px;
     --fs-10xl: 100px;
+  }
+
+  footer iframe {
+    height: 640px;
   }
 
   .slick-counter {
