@@ -592,13 +592,11 @@
             once: true,
             disable: "mobile",
         });
-
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.body.classList.remove("overflow-hidden");
-                document.getElementById("loader").classList.add("remove-loader");
-            }, 100);
-        });
+        setTimeout(() => {
+            var preloader = document.getElementById("loader");
+            preloader.classList.add("d-none")
+            document.body.classList.remove("overflow-hidden");
+        }, 2500);
     </script>
 </body>
 
