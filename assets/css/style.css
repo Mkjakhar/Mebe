@@ -473,6 +473,13 @@ footer iframe {
   height: 340px;
 }
 
+.hero_section {
+  background: url(/assets/img/webp/kich-1.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 575.98px) {
   :root {
     --fs-xl: 20px;
