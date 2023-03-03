@@ -87,16 +87,14 @@
                 </div>
             </nav>
             <section style="z-index: 1" class="flex-grow-1 bg_dark position-relative hero_section">
-                <!-- <video style="object-fit: cover; z-index: -1" class="w-100 h-100 position-absolute top-0 start-0" muted
+                <video style="object-fit: cover; z-index: -1" class="w-100 h-100 position-absolute top-0 start-0" muted
                     loop id="autoplay" playsinline>
                     <source src="./assets/video/kitchen-mai1.mp4" type="video/mp4">
-                </video> -->
-                <video style="object-fit: cover; z-index: -1;" id="example_video_1"
-                    class="video-js vjs-default-skin w-100 h-100 position-absolute top-0 start-0" autoplay
-                    preload="auto" poster="http://video-js.zencoder.com/oceans-clip.png"
-                    data-setup='{"example_option":true}'>
-                    <source src="/assets/video/kitchen-mai1.mp4" type="video/mp4" />
                 </video>
+                <!-- <video style="object-fit: cover; z-index: -1;" data-setup='{"controls": false, "preload": "auto"}'
+                    autoplay class="video-js w-100 h-100 position-absolute top-0 start-0">
+                    <source src="/assets/video/kitchen-mai1.mp4" type="video/mp4">
+                </video> -->
                 <img src="./assets//img/webp/hero-img.webp" style="display: none" alt="" />
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-center py-5 text-center">
@@ -618,6 +616,10 @@
             preloader.classList.add("d-none")
             document.body.classList.remove("overflow-hidden");
         }, 2500);
+
+        videojs('video-js', {
+            autoplay: true
+        });
     </script>
 </body>
 
