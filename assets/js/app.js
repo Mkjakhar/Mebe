@@ -735,5 +735,10 @@ $(".partners-slider").slick({
 
 
 window.onload = function () {
-    document.getElementById('autoplay').play()
+    document.getElementById('autoplay').play();
+    document.getElementById('autoplay1').play();
+    document.getElementById('autoplay2').play();
+    document.getElementById('autoplay3').play();
+    document.getElementById('autoplay4').play();
+    document.getElementById('autoplay5').play();
 }
