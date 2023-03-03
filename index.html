@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="./assets/img/png/favicon.png" type="image/x-icon" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
 </head>
 
 <body class="overflow-hidden">
@@ -87,8 +87,8 @@
                 </div>
             </nav>
             <section style="z-index: 1" class="flex-grow-1 bg_dark position-relative hero_section">
-                <video style="object-fit: cover; z-index: -1" class="w-100 h-100 position-absolute top-0 start-0" muted
-                    loop id="autoplay" playsinline>
+                <video id="my-video" style="object-fit: cover; z-index: -1"
+                    class="w-100 h-100 position-absolute top-0 start-0 video-js" muted loop autoplay playsinline>
                     <source src="./assets/video/kitchen-mai1.mp4" type="video/mp4">
                 </video>
                 <!-- <video style="object-fit: cover; z-index: -1;" data-setup='{"controls": false, "preload": "auto"}'
@@ -603,8 +603,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js -->
     <script src="./assets/js/app.js"></script>
-    <script src="//vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
-    <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
     <script>
         // aos
         AOS.init({
@@ -616,10 +615,6 @@
             preloader.classList.add("d-none")
             document.body.classList.remove("overflow-hidden");
         }, 2500);
-
-        videojs('video-js', {
-            autoplay: true
-        });
     </script>
 </body>
 
