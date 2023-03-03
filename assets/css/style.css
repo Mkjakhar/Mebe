@@ -373,6 +373,10 @@ nav div a:hover img {
   background-color: rgba(217, 217, 217, 0.5);
 }
 
+.btn-close:focus {
+  box-shadow: unset;
+}
+
 .left_arrow {
   position: absolute;
   top: 55%;
