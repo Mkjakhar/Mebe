@@ -732,3 +732,8 @@ $(".partners-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+
+
+window.onload = function () {
+    document.getElementById('autoplay').play()
+}
