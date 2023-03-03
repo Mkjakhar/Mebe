@@ -728,6 +728,7 @@ $(".partners-slider").slick({
     autoplay: true,
     fade: true,
     pauseOnHover: false,
+    pauseOnFocus: false,
     slidesToShow: 1,
     slidesToScroll: 1,
 });

@@ -578,7 +578,6 @@ footer iframe {
     top: 0%;
     right: 0;
     width: 100%;
-    /* transform: translateY(-50%); */
   }
 
   .slick-counter .current {
@@ -626,7 +625,6 @@ footer iframe {
     top: -3%;
     right: 0;
     width: 100%;
-    /* transform: translateY(-50%); */
   }
 }
 
@@ -658,7 +656,6 @@ footer iframe {
     top: -5%;
     right: 0;
     width: 100%;
-    /* transform: translateY(-50%); */
   }
 
   .slider_social_icons {
