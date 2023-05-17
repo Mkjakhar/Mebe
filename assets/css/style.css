@@ -198,7 +198,7 @@ nav div a:hover img {
 }
 
 .hero_btn:hover {
-  background-color: var(--clr-white);
+  background-color: var(--clr-white) !important;
   color: var(--clr-dark);
 }
 
@@ -208,6 +208,7 @@ nav div a:hover img {
   transition: linear 250ms;
   background-color: transparent;
 }
+
 .send_btn {
   padding: 14px 18px;
   border: 3px solid var(--clr-light);
@@ -219,6 +220,7 @@ nav div a:hover img {
   background-color: var(--clr-light);
   color: var(--clr-dark);
 }
+
 .contact_btn:hover {
   background-color: var(--clr-black);
   color: var(--clr-white);
@@ -332,21 +334,6 @@ nav div a:hover img {
 
 .footer_icons {
   width: 35px;
-}
-
-.footer_mail_input {
-  padding: 16px 40px;
-  background: rgba(24, 24, 24, 0.83);
-  border: 3px solid var(--clr-light);
-  width: 100%;
-  outline: unset;
-}
-
-.footer_mail_input::placeholder {
-  font-size: var(--fs-4xl);
-  font-weight: 400;
-  font-family: 'Montserrat';
-  color: rgba(245, 239, 239, 0.22);
 }
 
 .qoutes_img {
@@ -495,15 +482,19 @@ footer iframe {
   background-repeat: no-repeat;
 }
 
-.modal-body input::placeholder {
+.modal-body input::placeholder,
+.modal-body textarea::placeholder {
   color: var(--clr-light);
   font-size: var(--fs-xl);
   font-family: "Montserrat";
 }
 
-.modal-body input {
+.modal-body input,
+.modal-body textarea {
   border: 2px solid var(--clr-light);
   border-radius: 4px;
+  resize: none;
+  outline: unset;
 }
 
 input::-webkit-outer-spin-button,

@@ -18,7 +18,9 @@
     <link rel="shortcut icon" href="./assets/img/png/favicon.png" type="image/x-icon" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- video-js -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <!-- sweet-alert -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.css"
         integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -111,10 +113,10 @@
                             ХОТИТЕ ПОЛУЧИТЬ БЫСТРЫЙ РАСЧЕТ?
                         </p>
                         <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="900" class="main_btn">
-                            <a href="mailto:mebelier_almaty@inbox.ru" target="_blank"
-                                class="text-uppercase ff_mont fw_regular text_light d-inline-block hero_btn fs_3xl mb-0 mt-4">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal" target="_blank"
+                                class="text-uppercase ff_mont fw_regular bg-transparent text_light d-inline-block hero_btn fs_3xl mb-0 mt-4">
                                 ОСТАВИТЬ ЗАЯВКУ
-                            </a>
+                            </button>
                         </div>
                         <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="1200"
                             class="pageLogo ff_mont text_light fw_regular fs_xl mt-4">
@@ -269,7 +271,7 @@
                             контакты</button>
                     </div>
                 </div>
-                <!-- Modal -->
+                <!-- Modal-for-form -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -288,8 +290,11 @@
                                     <input required id="modal-phone" maxlength="10"
                                         class="bg-transparent p-2 w-100 ff_mont text_light fw_regular fs_xl mt-3"
                                         type="number" placeholder="Контактный номер">
+                                    <textarea id="modal-message"
+                                        class="bg-transparent p-2 w-100 ff_mont text_light fw_regular fs_xl mt-3"
+                                        placeholder="сообщение"></textarea>
                                     <button type="submit" id="modal-submit"
-                                        class="fs_xl fw_regular ff_mont text_light send_btn btn_font_size text-uppercase py-2 mt-4">отправлять</button>
+                                        class="fs_xl fw_regular ff_mont text_light send_btn btn_font_size text-uppercase py-2 mt-4">ОТПРАВИТЬ</button>
                                 </form>
                             </div>
                         </div>
@@ -592,7 +597,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- ==================SWITALERT-SCRIPT-LINK===================== -->
+    <!-- sweet-alert -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.js"
         integrity="sha512-L4Cxz+Ii4NTlqGOdMTJ9D5/yd2wBMGzadlkrkVztsCT0dxCr0m69AGhADN9dbkdLqbhH0pGXmFW7Sw36fdBq/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -602,6 +607,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js -->
     <script src="./assets/js/app.js"></script>
+    <!-- video-js -->
     <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
     <script>
         // aos
@@ -623,15 +629,18 @@
             let el = document.getElementById("close-button");
             let name = document.getElementById("modal-name").value;
             let phone = document.getElementById("modal-phone").value;
+            let message = document.getElementById("modal-message").value;
             let modalSubmit = document.getElementById("modal-submit");
             emailjs
                 .send("service_11iqxem", "template_8w1ds0o", {
                     name: name,
                     phone: phone,
+                    message: message,
                 })
                 .then(() => {
                     document.getElementById("modal-name").value = "";
                     document.getElementById("modal-phone").value = "";
+                    document.getElementById("modal-message").value = "";
                     el.click()
                     Swal.fire({
                         title: "Thank you!",
