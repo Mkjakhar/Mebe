@@ -19,6 +19,9 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.css"
+        integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="overflow-hidden">
@@ -259,10 +262,37 @@
                             Получите консультацию
                             <span class="d-lg-block"> прямо сейчас</span>
                         </p>
-                        <a data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-delay="200"
-                            href="mailto:mebelier_almaty@inbox.ru" target="_blank"
-                            class="fs_3xl fw_regular ff_mont text_black contact_btn btn_font_size text-uppercase mb-3 mt-lg-5 mt-4 d-inline-block">ОСтавить
-                            контакты</a>
+                        <button
+                            class="fs_3xl fw_regular ff_mont text_black contact_btn btn_font_size text-uppercase mb-3 mt-lg-5 mt-4 d-inline-block"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="fade-up"
+                            data-aos-duration="800" data-aos-offset="200" data-aos-delay="200">ОСтавить
+                            контакты</button>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg_dark">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs_3xl fw_regular ff_mont text_light btn_font_size text-uppercase"
+                                    id="exampleModalLabel">ОСтавить контакты</h3>
+                                <button type="button" id="close-button" class="btn-close btn-close-white"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form onsubmit="onSend(event)">
+                                    <input required id="modal-name"
+                                        class="bg-transparent p-2 w-100 ff_mont text_light fw_regular fs_xl" type="text"
+                                        placeholder="Ваше имя">
+                                    <input required id="modal-phone" maxlength="10"
+                                        class="bg-transparent p-2 w-100 ff_mont text_light fw_regular fs_xl mt-3"
+                                        type="number" placeholder="Контактный номер">
+                                    <button type="submit" id="modal-submit"
+                                        class="fs_xl fw_regular ff_mont text_light send_btn btn_font_size text-uppercase py-2 mt-4">отправлять</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -562,6 +592,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ==================SWITALERT-SCRIPT-LINK===================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.js"
+        integrity="sha512-L4Cxz+Ii4NTlqGOdMTJ9D5/yd2wBMGzadlkrkVztsCT0dxCr0m69AGhADN9dbkdLqbhH0pGXmFW7Sw36fdBq/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js -->
@@ -578,6 +614,41 @@
             preloader.classList.add("d-none")
             document.body.classList.remove("overflow-hidden");
         }, 2500);
+
+        // MODAL EMAIL JS
+        emailjs.init("fkU8nJy-XaWGS3QY6");
+
+        function onSend(event) {
+            event.preventDefault();
+            let el = document.getElementById("close-button");
+            let name = document.getElementById("modal-name").value;
+            let phone = document.getElementById("modal-phone").value;
+            let modalSubmit = document.getElementById("modal-submit");
+            emailjs
+                .send("service_11iqxem", "template_8w1ds0o", {
+                    name: name,
+                    phone: phone,
+                })
+                .then(() => {
+                    document.getElementById("modal-name").value = "";
+                    document.getElementById("modal-phone").value = "";
+                    el.click()
+                    Swal.fire({
+                        title: "Thank you!",
+                        text: "We will get in touch shortly",
+                        icon: "success",
+                        confirmButtonText: "submit",
+                    });
+                })
+                .catch((err) => {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Failed to submit form! Please Try again.",
+                        icon: "error",
+                        confirmButtonText: "Okay",
+                    });
+                });
+        }
     </script>
 </body>
 
